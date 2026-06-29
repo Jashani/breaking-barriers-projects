@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breaking Barriers to AI Safety — Hackathon Projects</title>
+  <meta name="description" content="Projects from the Breaking Barriers to AI Safety Hackathon — a low-pressure, non-technical hackathon for generalists pivoting into AI safety. Hosted by LISA x BlueDot Impact, 13 June 2026." />
+  <meta property="og:title" content="Breaking Barriers to AI Safety — Hackathon" />
+  <meta property="og:description" content="Over 75 participants. 28 projects. One day of building, by generalists, for AI safety." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/brand/logo.png" />
+  <link rel="icon" href="assets/brand/shoggoth.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top">
+      <img src="assets/brand/shoggoth.png" alt="" class="nav__mascot" />
+      <span>Breaking&nbsp;Barriers</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">London Initiative for Safe AI &nbsp;·&nbsp; 13 June 2026</p>
+        <img class="hero__logo" src="assets/brand/logo.png" alt="Breaking Barriers to AI Safety" />
+        <p class="hero__tagline">
+          For generalists and non-technical individuals from diverse
+          backgrounds pivoting into AI safety.
+        </p>
+        <div class="hero__stats">
+          <div class="stat"><span class="stat__num">75+</span><span class="stat__label">participants</span></div>
+          <div class="stat"><span class="stat__num">28</span><span class="stat__label">projects</span></div>
+          <div class="stat"><span class="stat__num">£2,750</span><span class="stat__label">in prizes</span></div>
+        </div>
+        <a class="hero__cta" href="#projects">See the projects ↓</a>
+      </div>
+      <img class="hero__shoggoth" src="assets/brand/shoggoth-rainbow.png" alt="The hackathon's shoggoth mascot" />
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <h2>The Projects</h2>
+        <p class="section__lead">
+          From an educational tool for children to governance audits, a war-game simulation,
+          a framework for community-led cultural alignment, to a map of the AI supply chain.
+          Built in a day by generalists from every background. Tap any project to read more.
+        </p>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by category"></div>
+
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section--alt" id="gallery">
+      <div class="section__head">
+        <h2>The Day in Pictures</h2>
+      </div>
+      <div class="gallery" id="gallery-grid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="about">
+        <div class="about__text">
+          <h2>About the Hackathon</h2>
+          <p>
+            <strong>Breaking Barriers to AI Safety</strong> was a hackathon at the London
+            Initiative for Safe AI (LISA), built for generalists and individuals from
+            less-technical fields to get hands-on AI safety experience. Teams chose from suggested
+            projects or came up with their own, alongside a bingo track of smaller tasks to help
+            people explore their interests and build mini proof-of-work artifacts.
+          </p>
+          <p>
+            We had over 75 participants and 28 submitted projects. The room was full of talented
+            people, but the depth, breadth, and quality of the work still went far beyond what we
+            could have imagined. They showed us that you don't need a traditional background to do
+            useful, ambitious work in AI safety.
+          </p>
+          <p class="about__hosts">Hosted by
+            <a href="https://www.safeai.org.uk/" target="_blank" rel="noopener"><strong>LISA</strong></a>
+            &times;
+            <a href="https://bluedot.org/" target="_blank" rel="noopener"><strong>BlueDot Impact</strong></a>.</p>
+
+          <h3>The team</h3>
+          <ul class="team">
+            <li><a href="https://www.linkedin.com/in/nina-wolff-ingham/" target="_blank" rel="noopener">Nina Wolff-Ingham <span>↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/okurilov/" target="_blank" rel="noopener">Oliver Kurilov <span>↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/yasharise/" target="_blank" rel="noopener">Yasha Rise <span>↗</span></a></li>
+          </ul>
+        </div>
+        <div class="about__aside">
+          <img src="assets/brand/shoggoth.png" alt="The hackathon's shoggoth mascot" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Breaking Barriers to AI Safety ·
+      <a href="https://www.safeai.org.uk/" target="_blank" rel="noopener">LISA</a> ×
+      <a href="https://bluedot.org/" target="_blank" rel="noopener">BlueDot Impact</a> · 13 June 2026</p>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <div class="modal__badges">
+        <span class="modal__award" id="modal-award" hidden></span>
+        <span class="modal__cat" id="modal-cat"></span>
+      </div>
+      <h3 class="modal__title" id="modal-title"></h3>
+      <p class="modal__subtitle" id="modal-subtitle"></p>
+      <p class="modal__authors" id="modal-authors"></p>
+      <div class="modal__desc" id="modal-desc"></div>
+      <div class="modal__links" id="modal-links"></div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" data-lb-close aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" data-lb-prev aria-label="Previous">‹</button>
+    <img class="lightbox__img" id="lightbox-img" alt="Hackathon photo" />
+    <button class="lightbox__nav lightbox__nav--next" data-lb-next aria-label="Next">›</button>
+  </div>
+
+  <script src="assets/projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
